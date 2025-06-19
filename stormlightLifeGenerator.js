@@ -1,7 +1,7 @@
 console.log("Welcome!");
 
 console.log("Your stormlight archive life randomized")
-function generateStory() {
+
 let rank = Math.floor(Math.random() * 4);
 
 let origin = Math.floor(Math.random() * 4);
@@ -10,7 +10,7 @@ let radiantOrder = Math.floor(Math.random() * 9);
 
 let buddy = Math.floor(Math.random() * 9);
 
-console.log("You are a"); 
+console.log("You are a "); 
 
 if (rank === 0) {
     console.log("surgeon");
@@ -111,5 +111,5 @@ if (buddy === 0 && radiantOrder === 0) {
 } else {
     console.log("Y'all prepare for you mission, grabbing some supplies"); 
 } 
-}
+
 console.log("Part 2 coming soon"); 
