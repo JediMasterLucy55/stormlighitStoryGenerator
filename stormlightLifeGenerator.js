@@ -113,7 +113,13 @@ story += "\n\nPart 2 coming soon.";
 
 document.getElementById("story").textContent = story;
 
+generateStory = () => {
+    console.log(story);
+} 
 
+getElementById("generate-story").addEventListener("click", generateStory);
+
+story.appendChild(story);
 
 /* let rank = Math.floor(Math.random() * 4);
 
