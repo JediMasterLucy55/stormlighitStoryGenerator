@@ -1,8 +1,9 @@
-console.log("Welcome!");
+const button = document.getElementById("generate-story");
+const output = document.getElementById("story-output");
 
-console.log("Your stormlight archive life randomized")
+const generateStory = () => {
 
-let rank = Math.floor(Math.random() * 4);
+    let rank = Math.floor(Math.random() * 4);
 let origin = Math.floor(Math.random() * 4);
 let radiantOrder = Math.floor(Math.random() * 10);
 let buddy = Math.floor(Math.random() * 10);
@@ -111,15 +112,10 @@ if (buddy === 0 && radiantOrder === 0) {
 
 story += "\n\nPart 2 coming soon.";
 
-document.getElementById("story").textContent = story;
+    output.textContent = story;
+}
 
-generateStory = () => {
-    console.log(story);
-} 
-
-getElementById("generate-story").addEventListener("click", generateStory);
-
-story.appendChild(story);
+button.addEventListener("click", generateStory);
 
 /* let rank = Math.floor(Math.random() * 4);
 
